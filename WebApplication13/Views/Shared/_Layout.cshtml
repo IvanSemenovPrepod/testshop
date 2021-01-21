@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @await Html.PartialAsync("PartHead")
+</head>
+<body>
+    @await Html.PartialAsync("PartHeader")
+    @await Html.PartialAsync("PartCart")
+    <!--@await Html.PartialAsync("PartSlider")-->
+    @RenderBody()
+    @await Html.PartialAsync("PartModal")
+    @await Html.PartialAsync("PartBackToTop")
+    @await Html.PartialAsync("PartFooter")
+    @await Html.PartialAsync("PartScript")
+</body>
+</html>
